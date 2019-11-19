@@ -4,18 +4,7 @@ import Board from './Board';
 import STORE from './dummy-store';
 
 class FolderRoute extends React.Component {
-    /*constructor(props){
-        super(props);
-        this.state= props;
-        //console.log(this.state.folder);
-        //console.log(this.state.store.folders);
-    }*/
-    state= {
-        state : null 
-    }
     
-
-
     render(){
         const {folderNum} = this.props.match.params;
         return (

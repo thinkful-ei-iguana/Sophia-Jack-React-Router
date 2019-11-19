@@ -7,13 +7,16 @@ import { Link } from 'react-router-dom';
 
 export default function Item(props){
 
-    const {name, modified} = props;
-    const day = new Date(modified).toDateString()
+    const {name, modified, itemNum} = props;
+    const day = new Date(modified).toDateString();
+    const link = '/note/' + itemNum;
     
     return(
+        <Link to={link}>
         <div className="item">
             <h3>{name}</h3>
             <p>Date modified on {day}</p>
         </div>
+        </Link>
     )
 }

@@ -17,7 +17,7 @@ function App() {
       <Switch>
         <Route path='/main' render={() => <Main store={STORE} />} />
         <Route path='/folder/:folderNum' component={Folder} />
-        <Route path='/note' render={(noteNum) => <Note note={STORE.notes[noteNum]} />} />
+        <Route path='/note/:noteNum' component={Note} />
       </Switch>
     </div>
   );
