@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 //take Name, id, and modified
@@ -6,7 +7,7 @@ import React from 'react';
 
 export default function Item(props){
 
-    const {name, id, modified} = props;
+    const {name, modified} = props;
     const day = new Date(modified).toDateString()
     
     return(
