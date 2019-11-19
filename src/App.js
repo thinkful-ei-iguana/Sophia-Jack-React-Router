@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Main from './components/MainRoute';
+import STORE from './components/dummy-store';
+//import Item from './components/Item'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Noteful</h1>{/*make this a route later*/}
       </header>
+      <Main store={STORE}/>{/*make this a route later*/}
     </div>
   );
 }
